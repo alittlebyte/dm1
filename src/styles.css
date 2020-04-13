@@ -1,0 +1,148 @@
+@font-face{
+	font-family: Bebas;
+	src:url(../fonts/Bebas.ttf);
+}
+
+@font-face{
+	font-family: Montserrat;
+	src:url(../fonts/Montserrat.ttf);
+}
+
+body{
+	font-family:Montserrat;
+	color:#8D8D8D;
+}
+
+.frame{
+	padding:20px;
+	width:550px;
+	height:600px;
+	border: 10px solid #EBEBEB;
+	background-color:#F8F8F8;
+}
+
+
+.radio_holder{
+	margin:5px 5px;
+}
+
+.radio_custom_btn{
+	opacity: 0;
+    position: absolute;   
+}
+
+.radio_custom_label{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.radio_custom_label:before{
+	margin-left:15px;
+}
+
+.radio_label_title{
+	font-family: Bebas;
+	font-size:26px;
+	flex-basis:60%;
+}
+
+.radio_custom_btn, .radio_custom_label {
+    cursor: pointer;
+}
+
+.radio_custom_btn + .radio_custom_label:before {
+    content: '';
+    background:#fff;
+    border: 6px solid #DADADA;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.radio_custom_btn:checked + .radio_custom_label:before {
+    border: #34648E solid 6px;
+    background: #0294BF;
+    box-shadow: inset 0px 0px 0px 5px #EBF4F7;
+}
+
+.radio_custom_btn:focus + .radio_custom_label{
+	outline:2px solid #BCD9E4;
+	background:#EBF4F7;
+}
+
+
+.amount_holder{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:30px 0;
+}
+
+.amount_text{
+	padding-right:10px;
+	color:black;
+	font-size:14px;
+}
+
+#license_amount{
+	padding:6px 0;
+	width:60px;
+}
+
+
+.factor_holder{
+	font-family:Bebas;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:30px;
+	margin-bottom:-20px;
+}
+
+.factor_text{
+	letter-spacing:2px;
+}
+
+.factor_number{
+	padding-left:8px;
+	letter-spacing:1px;
+}
+
+.factor_currency{
+	padding-bottom:5px;
+	font-size:18px;
+}
+
+.factor_number,.factor_currency{
+	color:#0294BF;
+}
+
+
+.purchase_button{
+	display:block;
+	font-size:14px;
+	margin:0 auto;
+	width:220px;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	background:#33A845;
+	border-radius:30px;
+	padding:20px 0;
+}
+
+
+.plan_holder{
+	display:flex;
+	justify-content:center;
+	color:#0294BF;
+	padding-top:30px;
+	font-size:19px;
+}
+
+.plan_number{
+	padding-left:15px;
+}
